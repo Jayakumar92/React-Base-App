@@ -1,0 +1,86 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "noImplicitAny": false,
+    "jsx": "react-jsx",
+    "paths": {
+      "@assets/*": [
+        "./src/assets*"
+      ],
+      "@assets": [
+        "./src/assets"
+      ],
+      "@components/*": [
+        "./src/components*"
+      ],
+      "@components": [
+        "./src/components"
+      ],
+      "@contexts/*": [
+        "./src/contexts*"
+      ],
+      "@contexts": [
+        "./src/contexts"
+      ],
+      "@hooks/*": [
+        "./src/hooks*"
+      ],
+      "@hooks": [
+        "./src/hooks"
+      ],
+      "@modules/*": [
+        "./src/modules*"
+      ],
+      "@modules": [
+        "./src/modules"
+      ],
+      "@redux/*": [
+        "./src/redux*"
+      ],
+      "@redux": [
+        "./src/redux"
+      ],
+      "@routes/*": [
+        "./src/routes*"
+      ],
+      "@routes": [
+        "./src/routes"
+      ],
+      "@services/*": [
+        "./src/services*"
+      ],
+      "@services": [
+        "./src/services"
+      ],
+      "@translations/*": [
+        "./src/translations*"
+      ],
+      "@translations": [
+        "./src/translations"
+      ],
+      "@utils/*": [
+        "./src/utils*"
+      ],
+      "@utils": [
+        "./src/utils"
+      ],
+    },
+  },
+}
