@@ -4,9 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { AppProvider } from "@contexts";
-import { store } from '@redux'
+// import { store } from '@redux'
 import { Provider } from 'react-redux';
 import { BrowserRouter } from "react-router-dom";
+import { PersistGate } from "redux-persist/integration/react";
+
+import { store, sagaMiddleware, rootSaga, persistor } from "@redux";
+
+
+sagaMiddleware.run(rootSaga);
 
 
 const root = ReactDOM.createRoot(
@@ -15,11 +21,13 @@ const root = ReactDOM.createRoot(
 root.render(
 
   <Provider store={store}>
-    <AppProvider>
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
-    </AppProvider>
+    <PersistGate loading={null} persistor={persistor}>
+      <AppProvider>
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
+      </AppProvider>
+    </PersistGate>
   </Provider>
 );
 

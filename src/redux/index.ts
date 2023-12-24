@@ -1,3 +1,10 @@
-export * from './app'
+export * from './App'
 
-export * from './store';
+
+
+
+/**
+ *  Reducer should be always above Sage and store
+ */
+export * from './Sagas';
+export * from './Store';
